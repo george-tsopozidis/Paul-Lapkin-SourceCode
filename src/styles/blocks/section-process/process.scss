@@ -1,0 +1,120 @@
+.process {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12rem 0;
+  background-color: #f6f6f6;
+
+  &-work,
+  .work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title {
+      font-family: "Raleway";
+      font-size: 4rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    &-subtitle {
+      font-family: "Roboto";
+      font-size: 1.6rem;
+      font-weight: 500;
+      text-align: center;
+      opacity: 0.7;
+      margin-bottom: 6rem;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+
+      @include tablets {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      &__item,
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #10c6fc;
+        transition: opacity 0.4s linear;
+        cursor: pointer;
+        width: 28rem;
+        height: 27.8rem;
+        margin-right: 1.8rem;
+
+        @include tablets {
+          width: 34.7rem;
+        }
+
+        @include phones {
+          width: 100%;
+        }
+
+        &-icon {
+          margin-bottom: 4.7rem;
+        }
+
+        &-text {
+          font-family: "Raleway";
+          font-size: 1.6rem;
+          font-weight: 700;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        &:first-child {
+          @include tablets {
+            margin-bottom: 2rem;
+          }
+
+          @include phones {
+            margin-right: 0;
+            padding: 8.8rem 11.3rem;
+          }
+        }
+
+        &:nth-child(2) {
+          background-color: #835aeb;
+
+          @include tablets {
+            margin-bottom: 2rem;
+            margin-right: 0;
+          }
+
+          @include phones {
+            padding: 8.8rem 8.4rem;
+          }
+        }
+
+        &:nth-child(3) {
+          background-color: #002453;
+
+          @include phones {
+            margin-bottom: 2rem;
+            margin-right: 0;
+          }
+        }
+
+        &:last-child {
+          background-color: #ff2b4a;
+          margin-right: 0;
+        }
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

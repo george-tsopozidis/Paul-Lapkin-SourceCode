@@ -1,0 +1,202 @@
+.request {
+  background: url("./images/resume-bg.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 12rem 0;
+
+
+  &-cont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include tablets {
+      justify-content: center;
+    }
+
+    &__form,
+    .form {
+      color: #fff;
+      background: url("./images/desc-bg.png");
+      background-position: center top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 6.4rem 4.2rem;
+      max-width: 57.8rem;
+      height: 78.8rem;
+      flex: 1 0 auto;
+
+      @include tablets {
+        margin-bottom: 4.5rem;
+      }
+
+      @include phones {
+        width: 100%;
+      }
+
+      &-title {
+        font-family: "Roboto";
+        font-size: 2.6rem;
+        font-weight: 700;
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 6.4rem;
+      }
+
+      &-input {
+        font-family: "Roboto";
+        font-size: 1.2rem;
+        text-align: left;
+        margin-bottom: 2.7rem;
+        background: transparent;
+        border: 1px solid #fff;
+        border-radius: 2px;
+        padding: 2rem 43.7rem 2rem 2rem;
+
+        @include phones {
+          padding: 1.8rem;
+        }
+
+        &::placeholder {
+          color: #fff;
+          opacity: 0.6;
+        }
+      }
+
+      &-text {
+        font-family: "Roboto";
+        font-size: 1.2rem;
+        text-align: left;
+        margin-bottom: 3.6rem;
+        background: transparent;
+        border-radius: 2px;
+        border: 1px solid #fff;
+        padding: 2.2rem 41.6rem 17.1rem 2.3rem;
+
+        @include phones {
+          padding: 1.8rem 1.8rem 17.1rem 1.8rem;
+        }
+
+        &::placeholder {
+          color: #fff;
+          opacity: 0.6;
+        }
+      }
+
+      &-btn {
+        align-self: flex-end;
+        font-family: "Roboto";
+        font-size: 1.6rem;
+        font-weight: 500;
+        background-color: #ff2b4a;
+        padding: 1.2rem 7rem;
+        text-align: center;
+      }
+    }
+
+    &__contact,
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      flex: 0 1 auto;
+      max-width: 57.8rem;
+
+      &-addr {
+        background: url("./images/desc-bg.png");
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        padding: 6rem 4.6rem;
+        margin-bottom: 1.9rem;
+
+        &__title {
+          font-family: "Raleway";
+          font-size: 2.6rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          text-align: left;
+          color: #fff;
+          margin-bottom: 4rem;
+        }
+
+        &__desc {
+          font-family: "Roboto";
+          font-size: 1.6rem;
+          opacity: 0.7;
+          line-height: 2.2rem;
+          color: #fff;
+        }
+      }
+
+      &-phone {
+        padding: 6rem 4.6rem;
+        margin-bottom: 1.9rem;
+        display: flex;
+        flex-direction: column;
+        background: url("./images/desc-bg.png");
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &__title {
+          font-family: "Raleway";
+          font-size: 2.6rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          text-align: left;
+          color: #fff;
+          margin-bottom: 4rem;
+        }
+
+        &__num {
+          display: flex;
+          flex-direction: column;
+          font-family: "Roboto";
+          font-size: 1.6rem;
+          opacity: 0.7;
+          line-height: 2.2rem;
+          color: #fff;
+          line-height: 3rem;
+        }
+      }
+
+      &-web {
+        padding: 6rem 4.6rem;
+        margin-bottom: 1.9rem;
+        display: flex;
+        flex-direction: column;
+        background: url("./images/desc-bg.png");
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &__title {
+          font-family: "Raleway";
+          font-size: 2.6rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          text-align: left;
+          color: #fff;
+          margin-bottom: 4rem;
+        }
+
+        &__desc {
+          display: flex;
+          flex-direction: column;
+          font-family: "Roboto";
+          font-size: 1.6rem;
+          opacity: 0.7;
+          line-height: 2.2rem;
+          color: #fff;
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+}

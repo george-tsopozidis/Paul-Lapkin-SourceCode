@@ -1,0 +1,21 @@
+// breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+// media import
+@import "./layout/media.scss";
+
+// reset imports
+@import "./layout/fonts.scss";
+@import "./layout/reset.scss";
+
+//blocks
+@import "./blocks/section-hero/hero.scss";
+@import "./blocks/section-hero/burger.scss";
+@import "./blocks/section-about/about.scss";
+@import "./blocks/section-process/process.scss";
+@import "./blocks/section-resume/resume.scss";
+@import "./blocks/section-projects/projects.scss";
+@import "./blocks/section-sign/sign.scss";
+@import "./blocks/section-form/form.scss";
+@import "./blocks/section-footer/footer.scss";

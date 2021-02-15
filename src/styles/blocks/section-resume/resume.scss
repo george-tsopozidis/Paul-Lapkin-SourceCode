@@ -1,0 +1,96 @@
+.resume {
+  padding: 12rem 0;
+  position: relative;
+  display: flex;
+  background: url("./images/resume-bg.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &-cv,
+  .cv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .story {
+        margin-right: 0;
+
+        @include tablets {
+          margin-bottom: 0;
+        }
+      }
+
+    &-story {
+      background: url("./images/desc-bg.png");
+      background-position: center top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 4rem 3rem;
+      margin-right: 2rem;
+
+      @include tablets {
+        margin-right: 0;
+        margin-bottom: 2.5rem;
+      }
+
+      &__title {
+        font-family: "Raleway";
+        font-size: 2.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: left;
+        margin-bottom: 6.5rem;
+        color: #fff;
+      }
+
+      &__desc,
+      .desc {
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+          font-family: "Raleway";
+          font-size: 1.8rem;
+          color: #fff;
+          opacity: 0.9;
+          font-weight: 700;
+          text-align: left;
+          margin-bottom: 1.9rem;
+        }
+
+        &-date {
+          font-family: "Roboto";
+          font-size: 1.6rem;
+          font-weight: 500;
+          text-align: left;
+          opacity: 0.7;
+          color: #fff;
+          margin-bottom: 1.6rem;
+        }
+
+        &-text {
+          font-family: "Roboto";
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 2.2rem;
+          text-align: left;
+          margin-bottom: 3rem;
+          color: #fff;
+          opacity: 0.5;
+        }
+
+        .description {
+          padding-bottom: 2rem;
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+  }
+}

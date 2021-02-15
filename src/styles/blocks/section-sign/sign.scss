@@ -1,0 +1,53 @@
+.signs {
+  background-color: #64cbc0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  padding: 12rem 0;
+
+  &-info, .infos {
+    display: flex;
+    flex-direction: column;
+    max-width: 46.6rem;
+    
+
+    &-icon {
+      margin-bottom: 5rem;
+    }
+
+    &-text {
+      font-family: 'Roboto';
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      text-align: left;
+      opacity: .8;
+      margin-bottom: 5.4rem;
+    }
+
+    &-signature {
+      margin-bottom: 3rem;
+    }
+
+    &-name {
+      display: flex;
+      flex-direction: column;
+      
+      &__fullname {
+        font-family: 'Roboto';
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-align: left;
+        opacity: .7;
+        margin-bottom: 1.6rem;
+      }
+
+      &__work {
+        font-family: 'Roboto';
+        font-size: 1.4rem;
+        text-align: left;
+        opacity: .7;
+      }
+    }
+  }
+}

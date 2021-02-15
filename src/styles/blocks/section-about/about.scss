@@ -1,0 +1,100 @@
+.about {
+  position: relative;
+  padding-top: 12rem;
+  display: flex;
+  align-items: flex-end;
+
+  @include tablets {
+    padding: 5rem 0;
+  }
+
+  &-content,
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include tablets {
+      flex-direction: column;
+    }
+
+    @include phones {
+      width: 100%;
+    }
+
+    &-img {
+      @include tablets {
+        margin-bottom: 2.5rem;
+      }
+
+      &__icon {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+
+    .content-info,
+    .info {
+      max-width: 64.7rem;
+      text-align: left;
+
+      @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &-title {
+        font-family: "Roboto";
+        font-size: 1.8rem;
+        font-weight: 700;
+        opacity: 0.7;
+        margin-bottom: 4rem;
+
+        @include phones {
+          font-size: 1.2rem;
+          margin-bottom: 2rem;
+        }
+      }
+
+      &-text {
+        opacity: 0.7;
+        font-family: "Roboto";
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+        margin-bottom: 6.7rem;
+
+        #parone {
+          margin-bottom: 2rem;
+        }
+
+        @include phones {
+          font-size: 1.2rem;
+          text-align: center;
+          line-height: 2rem;
+        }
+      }
+
+      &-btn {
+        color: #fff;
+        font-family: "Roboto";
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-align: center;
+        padding: 1.6rem 7rem;
+        background: #ff2b4a;
+        transition: opacity 0.3s linear;
+
+        @include phones {
+          padding: 1.2rem 4rem;
+          font-size: 1.4rem;
+        }
+
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}
